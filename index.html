@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Site Metas -->
+    <title>Yamifood Resturant - Home</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Site Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="apple-touch icon" href="img/favicon.ico">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/fa.all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    
+</head>
+<body>
+    
+    
+    <!-- Navbar -->
+    <nav class="nvbr">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="nvbr-tp">
+                        <a class="logo-link" href="index.html"><img src="img/logo.png" alt="Logo Yamifood"></a>
+                        <button class="toggle-btn" onclick="nvbrTgglr()"><i class="fas fa-bars"></i></button>
+                    </div>
+                    <div class="nvbr-nvp"><!-- Horixontal -->
+                        <ul>
+                            <li class="nv-item"><a class="nv-link active-nv" href="index.html">Home</a></li>
+                            <li class="nv-item"><a class="nv-link" href="menu.html">Menu</a></li>
+                            <li class="nv-item"><a class="nv-link" href="about.html">About</a></li>
+                            <li class="nv-item pg">
+                                <a class="nv-link" onclick="pgSliderp()">Pages <i class="fas fa-caret-down"></i></a>
+                                <ul class="pg-drpdnp">
+                                    <li><a href="#">Reservation</a></li>
+                                    <li><a href="#">Stuff</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                </ul>
+                            </li>
+                            <li class="nv-item">
+                                <a class="nv-link" onclick="blSliderp()">Blogs <i class="fas fa-caret-down"></i></a>
+                                <ul class="bl-drpdnp">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nv-item"><a class="nv-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nvbr-nv"><!-- Vertical -->
+                        <ul>
+                            <li class="nv-item"><a class="nv-link active-nv" href="index.html">Home</a></li>
+                            <li class="nv-item"><a class="nv-link" href="menu.html">Menu</a></li>
+                            <li class="nv-item"><a class="nv-link" href="about.html">About</a></li>
+                            <li class="nv-item pg">
+                                <a class="nv-link" onclick="pgSlider()">Pages <i class="fas fa-caret-down"></i></a>
+                                <ul class="pg-drpdn">
+                                    <li><a href="#">Reservation</a></li>
+                                    <li><a href="#">Stuff</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                </ul>
+                            </li>
+                            <li class="nv-item">
+                                <a class="nv-link" onclick="blSlider()">Blogs <i class="fas fa-caret-down"></i></a>
+                                <ul class="bl-drpdn">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="nv-item"><a class="nv-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Slider Section -->
+    <div id="slider-section" class="text-center text-light">
+        <div class="overlay slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Welcome To <br> Yamifood Restaurant</h1>
+                        <p>See how your users experience your website in realtime or view <br>trends to see any changes in performance over time.</p>
+                        <a class="btn" href="#">RESERVATION</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div onclick="leftSlide()" class="left-arrow">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div onclick="rightSlide()" class="right-arrow">
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <div class="slide-pointer">
+                <div onclick="slideShifter1()" class="circle circle1"></div>
+                <div onclick="slideShifter2()" class="circle circle2"></div>
+                <div onclick="slideShifter3()" class="circle circle3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Welcome Section -->
+    <div id="welcome-section">
+        <div class="container my-5 py-5 text-center">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid mt-3" src="img/about-img.jpg" alt="About Image">
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <h2>Welcome To <span>Yamifood Restaurant </span></h2>
+                    <p>Little Story</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem.</p>
+                    <p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem, a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.</p>
+                    <a href="#" class="btn">RESERVATION</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote Section -->
+    <div id="quote-section">
+        <div class="overlay">
+            <div class="container text-left">
+                <div class="row">
+                    <div class="col">
+                        <h2>" If you're not the one cooking, stay out of the way and compliment the chef. "</h2>
+                        <h5>Michael Strahan</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Section -->
+    <section id="menu-section">
+        <div class="container text-center my-5">
+            <div class="row">
+                <div class="col">
+                    <h3 class="sub-heading">Special Menu</h3>
+                    <p class="sub-heading-desc">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    <div class="menu-btn">
+                        <ul>
+                            <li><a onclick="menuAll()" class="menu-active">ALL</a></li>
+                            <li><a onclick="menuDrinks()" class="">DRINKS</a></li>
+                            <li><a onclick="menuLunch()" class="">LUNCH</a></li>
+                            <li><a onclick="menuDinner()" class="">DINNER</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 drinks" style="transition: transform 0.4s, all 0.4s;">
+                    <div class="menu-item menu-drinks">
+                        <a href="#">
+                            <img src="img/img-01.jpg" alt="Special drinks 1">
+                            <div class="menu-overlay">
+                                <h3>Special Drinks 1</h3>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <p>$7.79</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4 lunch" style="transition: transform 0.4s, all 0.4s;">
+                    <div class="menu-item menu-lunch">
+                        <a href="#">
+                            <img src="img/img-04.jpg" alt="Special drinks 1">
+                            <div class="menu-overlay">
+                                <h3>Special Lunch 1</h3>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <p>$7.79</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4 dinner" style="transition: transform 0.4s, all 0.4s;">
+                    <div class="menu-item menu-dinner">
+                        <a href="#">
+                            <img src="img/img-07.jpg" alt="Special drinks 1">
+                            <div class="menu-overlay">
+                                <h3>Special Dinner 1</h3>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <p>$7.79</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4 lunch" style="transition: transform 0.4s, all 0.4s;">
+                    <div class="menu-item menu-lunch">
+                        <a href="#">
+                            <img src="img/img-05.jpg" alt="Special drinks 1">
+                            <div class="menu-overlay">
+                                <h3>Special Lunch 2</h3>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <p>$7.79</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4 drinks" style="transition: transform 0.4s, all 0.4s;">
+                    <div class="menu-item menu-drinks">
+                        <a href="#">
+                            <img src="img/img-02.jpg" alt="Special drinks 1">
+                            <div class="menu-overlay">
+                                <h3>Special Drinks 2</h3>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <p>$7.79</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4 dinner" style="transition: transform 0.4s, all 0.4s;">
+                    <div class="menu-item menu-dinner">
+                        <a href="#">
+                            <img src="img/img-08.jpg" alt="Special drinks 1">
+                            <div class="menu-overlay">
+                                <h3>Special Dinner 2</h3>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <p>$7.79</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4 drinks" style="transition: transform 0.4s, all 0.4s;">
+                    <div class="menu-item menu-drinks">
+                        <a href="#">
+                            <img src="img/img-03.jpg" alt="Special drinks 1">
+                            <div class="menu-overlay">
+                                <h3>Special Drinks 3</h3>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <p>$7.79</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4 dinner" style="transition: transform 0.4s, all 0.4s;">
+                    <div class="menu-item menu-dinner">
+                        <a href="#">
+                            <img src="img/img-09.jpg" alt="Special drinks 1">
+                            <div class="menu-overlay">
+                                <h3>Special Dinner 3</h3>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <p>$7.79</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4 lunch" style="transition: transform 0.4s, all 0.4s;">
+                    <div class="menu-item menu-lunch">
+                        <a href="#">
+                            <img src="img/img-06.jpg" alt="Special drinks 1">
+                            <div class="menu-overlay">
+                                <h3>Special Lunch 3</h3>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <p>$7.79</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section id="gallery-section" class="text-center">
+        <div class="row">
+            <div class="col">
+                <h3 class="sub-heading">Gallery</h3>
+                <p class="sub-heading-desc">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="img-link" onclick="galleryOpener(1)">
+                    <img src="img/gallery-img-01.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="img-link" onclick="galleryOpener(2)">
+                    <img src="img/gallery-img-02.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="img-link" onclick="galleryOpener(3)">
+                    <img src="img/gallery-img-03.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="img-link" onclick="galleryOpener(4)">
+                    <img src="img/gallery-img-04.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="img-link" onclick="galleryOpener(5)">
+                    <img src="img/gallery-img-05.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="img-link" onclick="galleryOpener(6)">
+                    <img src="img/gallery-img-06.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="galley-image">
+        <button class="left-arrow gallery-arrow" onclick="imgLeftShifter()">
+            <i class="fas fa-angle-left"></i>
+        </button>
+        <button class="right-arrow gallery-arrow" onclick="imgRightShifter()">
+            <i class="fas fa-angle-right"></i>
+        </button>
+        <button class="cross-btn" onclick="galleryCrosser()">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="img-gl">
+        </div>
+    </div>
+    
+    <!-- Review Section -->
+    <section id="review-section" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="sub-heading">Customer Reviews</h3>
+                    <p class="sub-heading-desc">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="review-container">
+            <div class="review-btn left-rbtn" onclick="reviewSlide(1)">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="review-btn right-rbtn" onclick="reviewSlide(-1)">
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <div class="review-inner" style="">
+                <div class="review-img">
+                    <img src="img/profile-1.jpg" alt="">
+                </div>
+                <div class="review-desc">
+                    <h4>PAUL MITCHEL</h4>
+                    <small>Web Developer</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                </div>
+            </div>
+            <div class="review-inner hidden-review" style="">
+                <div class="reiviw-img">
+                    <img src="img/profile-2.jpg" alt="">
+                </div>
+                <div class="review-desc">
+                    <h4>STEVE FONSI</h4>
+                    <small>Web Designer</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                </div>
+            </div>
+            <div class="review-inner hidden-review" style="">
+                <div class="reiviw-img">
+                    <img src="img/profile-3.jpg" alt="">
+                </div>
+                <div class="review-desc">
+                    <h4>DANIEL VEBAR</h4>
+                    <small>SEO Analyst</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    
+    
+    <!-- Footer Section -->
+    <section id="footer-section" class="text-light">
+        <div class="footer-init">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="footer-icon">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <div class="icon-desc">
+                            <span>Phone</span><br>
+                            <span>+01 123-456-4590</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="footer-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="icon-desc">
+                            <span>Email</span><br>
+                            <span>yourmail@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="footer-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="icon-desc">
+                            <span>Location</span><br>
+                            <span>800, Lorem Street, US</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="footer-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4>ABOUT US</h4>
+                            <p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui, at ornare turpis ultrices sit amet. Nulla cursus lorem ut nisi porta, ac eleifend arcu ultrices.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4>OPENING HOURS</h4>
+                            <p>Monday: Closed</p>
+                            <p>Tue-Wed : 9:Am - 10PM</p>
+                            <p>Thu-Fri : 9:Am - 10PM</p>
+                            <p>Sat-Sun : 5:PM - 10PM</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4>CONTACT INFORMATION</h4>
+                            <p>Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
+                            <a href="#">+01 2000 800 9999</a><br>
+                            <a href="#">info@admin.com</a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4>SUBSCRIBE</h4>
+                            <form action="">
+                                <input type="email" placeholder="Email Address..."><br>
+                                <input type="button" value="SUBSCRIBE">
+                            </form>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>All Rights Reserved.</p>
+                        <p>&copy; 2020 - Yamifood Resturant</p>
+                        <p>Designed By: <a href="#">Sujan Mridha</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/test.js"></script>
+</body>
+</html>
