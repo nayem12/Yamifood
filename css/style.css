@@ -224,20 +224,28 @@ html{
 
 /* Slider Section */
 #slider-section{
-    background-image: url(../img/slider-01.jpg);
     background-position: center;
     background-size: cover;
     padding-top: 74px;
+    
+}
+.carousel-item img{
+    height: 100vh !important;
 }
 
-#slider-section .slider{
-    background: rgba(0,0,0,0.4);
+.carousel-caption{
+    background-color: rgba(0,0,0,0.5) !important;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 100vh !important;
+    
+    
 }
-
-#slider-section .overlay{
+/* #slider-section .overlay{
     min-height: 500px;
     position: relative;
-}
+} */
 #slider-section .container .row .col h1{
     font-size: 64px;
     font-family: 'Arbutus Slab', serif;
@@ -245,9 +253,7 @@ html{
     margin-top: 80px;
     margin-bottom: 20px;
 }
-#slider-section .container{
-    
-}
+
 #slider-section .container .row .col p{
     font-size: 18px;
 }
@@ -265,13 +271,7 @@ html{
     background: #d0a772;
 }
 
-#slider-section .left-arrow{
-    position: absolute;
-    top: 46%;
-    left: 20px;
-    font-size: 30px;
-    cursor: pointer;
-}
+
 
 #slider-section .right-arrow{
     position: absolute;
@@ -280,27 +280,10 @@ html{
     font-size: 30px;
     cursor: pointer;
 }
-#slider-section .left-arrow:hover,
-#slider-section .right-arrow:hover{
-    color: #d0a772;
-}
 
-#slider-section .overlay .slide-pointer{
-    position: absolute;
-    bottom: 0px;
-    margin: 0 auto;
-    width: 100%;
-    cursor: default;
-}
 
-#slider-section .overlay .slide-pointer .circle{
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    border: 2px solid #d0a772;
-    border-radius: 50%;
-    cursor: pointer;
-}
+
+
 
 
 
